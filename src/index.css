@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 172 100% 60%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 212 26% 83%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5% 10%;
+    --sidebar-foreground: 240 4% 95%;
+    --sidebar-primary: 224 76% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3% 15%;
+    --sidebar-accent-foreground: 240 4% 95%;
+    --sidebar-border: 240 3% 15%;
+    --sidebar-ring: 217 91% 59%;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 46%;
+
+    --accent: 172 100% 60%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 31% 91%;
+    --input: 214 31% 91%;
+    --ring: 222 84% 4%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 240 5% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 95%;
+    --sidebar-accent-foreground: 240 5% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-portfolio-blue text-portfolio-text font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-portfolio-white font-semibold;
+  }
+
+  a {
+    @apply text-portfolio-accent transition-colors duration-300 hover:text-portfolio-white;
+  }
+}
+
+.numbered-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+}
+
+.numbered-heading::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: theme('colors.portfolio.lighterBlue');
+}
+
+.numbered-heading .number {
+  margin-right: 10px;
+  color: theme('colors.portfolio.accent');
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-fade {
+  animation: slideUpFade 0.6s ease forwards;
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.project-card.visible {
+  animation: slideUpFade 0.6s ease forwards;
+}
+
+/* Staggered animation delays */
+.animate-delay-0 {
+  animation-delay: 0s;
+}
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+.animate-delay-5 {
+  animation-delay: 0.5s;
+}
