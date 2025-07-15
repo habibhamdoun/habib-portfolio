@@ -340,8 +340,10 @@ const Projects: React.FC = () => {
       image: '/assets/motors.jpg',
       showcaseImages: [
         '/assets/target4.jpg',
+        '/assets/target5.jpg',
+        '/assets/target6.jpg',
         '/assets/target1.PNG',
-        '/assets/target2.PNG',
+        '/assets/target2.jpg',
         '/assets/target3.PNG',
       ],
     },
