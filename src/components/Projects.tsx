@@ -221,7 +221,7 @@ const ProjectCard: React.FC<{
                     rel='noopener noreferrer'
                     className='text-portfolio-lighterText hover:text-portfolio-accent'
                   >
-                    <Github size={20} />
+                    Checkout Github Repo
                   </a>
                 )}
                 {demo && (
@@ -231,7 +231,7 @@ const ProjectCard: React.FC<{
                     rel='noopener noreferrer'
                     className='text-portfolio-lighterText hover:text-portfolio-accent'
                   >
-                    <ExternalLink size={20} />
+                    Go to
                   </a>
                 )}
               </div>
@@ -266,9 +266,9 @@ const ProjectCard: React.FC<{
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-portfolio-lighterText hover:text-portfolio-accent'
+              className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
             >
-              <Github size={20} />
+              Checkout Github Repo <Github size={16} />
             </a>
           )}
           {demo && (
@@ -276,9 +276,9 @@ const ProjectCard: React.FC<{
               href={demo}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-portfolio-lighterText hover:text-portfolio-accent'
+              className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
             >
-              <ExternalLink size={20} />
+              Go to website <ExternalLink size={16} />
             </a>
           )}
         </div>
@@ -353,8 +353,8 @@ const Projects: React.FC = () => {
         'A cash on delivery e-commerce platform with product filtering, search functionality, and responsive design.',
       tags: ['Next.js', 'React', 'Responsive Design', 'E-commerce'],
       github: 'https://github.com/habibhamdoun/',
-      demo: 'https://apocalypsefb.vercel.app/',
-      image: '/assets/apocalypse2.jpg',
+      demo: 'https://apocalypselb.com/',
+      image: '/assets/apocalypse3.png',
       showcaseImages: [
         '/assets/apocalypse1.png',
         '/assets/apocalypse3.png',
@@ -504,9 +504,9 @@ const Projects: React.FC = () => {
                         href={project.github}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-portfolio-lighterText hover:text-portfolio-accent'
+                        className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
                       >
-                        <Github size={20} />
+                        Checkout Github Repo <Github size={16} />
                       </a>
                     )}
                     {project.demo && (
@@ -514,9 +514,9 @@ const Projects: React.FC = () => {
                         href={project.demo}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-portfolio-lighterText hover:text-portfolio-accent'
+                        className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
                       >
-                        <ExternalLink size={20} />
+                        Go to website <ExternalLink size={16} />
                       </a>
                     )}
                     <button
