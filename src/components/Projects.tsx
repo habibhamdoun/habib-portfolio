@@ -221,7 +221,7 @@ const ProjectCard: React.FC<{
                     rel='noopener noreferrer'
                     className='text-portfolio-lighterText hover:text-portfolio-accent'
                   >
-                    Checkout Github Repo
+                    Github Repo
                   </a>
                 )}
                 {demo && (
@@ -266,9 +266,9 @@ const ProjectCard: React.FC<{
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
+              className='text-protfolio-accent flex items-center gap-2 hover:bg-portfolio-accent p-3 rounded-2xl hover:text-portfolio-lightBlue transition-colors'
             >
-              Checkout Github Repo <Github size={16} />
+              <Github size={16} />
             </a>
           )}
           {demo && (
@@ -276,7 +276,7 @@ const ProjectCard: React.FC<{
               href={demo}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
+              className='mx-2 text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
             >
               Go to website <ExternalLink size={16} />
             </a>
@@ -504,9 +504,9 @@ const Projects: React.FC = () => {
                         href={project.github}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
+                        className='mx-2 text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
                       >
-                        Checkout Github Repo <Github size={16} />
+                        Github Repo <Github size={16} />
                       </a>
                     )}
                     {project.demo && (
@@ -514,7 +514,7 @@ const Projects: React.FC = () => {
                         href={project.demo}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
+                        className='mx-2 text-portfolio-lightBlue flex items-center gap-2 bg-portfolio-accent p-3 rounded-2xl hover:bg-portfolio-lightBlue transition-colors'
                       >
                         Go to website <ExternalLink size={16} />
                       </a>
