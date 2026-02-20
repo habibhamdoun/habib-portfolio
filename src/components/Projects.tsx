@@ -117,7 +117,9 @@ const ShowcaseModal: React.FC<{
               className='max-w-full max-h-[60vh] object-contain'
             />
           ) : (
-            <p className='text-portfolio-text'>No showcase images available</p>
+            <p className='text-portfolio-text'>
+              No showcase images available due to NDA
+            </p>
           )}
 
           {images && images.length > 1 && (
@@ -332,6 +334,67 @@ const Projects: React.FC = () => {
   // Make sure showcase images exist and are valid
   const featuredProjects = [
     {
+      title: 'ZAYYANT (UAE MVP)',
+      description:
+        'End-to-end MVP built from Figma to production using React + TypeScript + Tailwind with Firebase backend (Firestore, Auth, Storage). Includes multilingual EN/AR (RTL) support, secure payment gateways, and AI-powered room visualization and furniture shopping tools.',
+      tags: [
+        'React',
+        'TypeScript',
+        'Tailwind',
+        'Firebase',
+        'Firestore',
+        'Auth',
+        'i18n',
+        'RTL',
+        'Payments',
+        'AI Integration',
+      ],
+      github: 'https://github.com/habibhamdoun/',
+      demo: '',
+      image: '/assets/zayyant.jpg',
+    },
+    {
+      title: 'KAIZENAPP',
+      description:
+        'Bilingual (EN/AR, RTL) Lean/Kaizen workflow platform with JWT authentication and MongoDB/Express backend. Features Kanban, 6S, Projects, Rewards, Analytics, Poka-Yoke, Andon, and SMED modules with real-time dashboards.',
+      tags: [
+        'React',
+        'TypeScript',
+        'Node.js',
+        'Express',
+        'MongoDB',
+        'JWT',
+        'i18n',
+        'RTL',
+        'Dashboards',
+      ],
+      github: 'https://github.com/habibhamdoun/',
+      demo: '',
+      image: '/assets/kaizen.jpg',
+    },
+    {
+      title: 'FMC Saudi Arabia',
+      description:
+        'Official multilingual company website built with React + Firebase, including a custom CMS that allows staff to manage content dynamically. (has since went offline)',
+      tags: [
+        'React',
+        'Firebase',
+        'Firestore',
+        'Auth',
+        'Storage',
+        'CMS',
+        'i18n',
+      ],
+      github: 'https://github.com/habibhamdoun/',
+      demo: 'https://fmc-supplychain.netlify.app/',
+      image: '/assets/fmc.jpg',
+      showcaseImages: [
+        '/assets/fmc-1.jpg',
+        '/assets/fmc-2.jpg',
+        '/assets/fmc-3.jpg',
+      ],
+    },
+    {
       title: 'Target Motors Angola',
       description:
         'Appointment management system with scheduling, customer management features, and multi-role access.',
@@ -345,20 +408,6 @@ const Projects: React.FC = () => {
         '/assets/target1.PNG',
         '/assets/target2.jpg',
         '/assets/target3.PNG',
-      ],
-    },
-    {
-      title: 'E-commerce Shop',
-      description:
-        'A cash on delivery e-commerce platform with product filtering, search functionality, and responsive design.',
-      tags: ['Next.js', 'React', 'Responsive Design', 'E-commerce'],
-      github: 'https://github.com/habibhamdoun/',
-      demo: 'https://apocalypselb.com/',
-      image: '/assets/apocalypse3.png',
-      showcaseImages: [
-        '/assets/apocalypse1.png',
-        '/assets/apocalypse3.png',
-        '/assets/apocalypse4.png',
       ],
     },
     {
