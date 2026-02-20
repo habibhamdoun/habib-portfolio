@@ -94,9 +94,9 @@ const About: React.FC = () => {
           <div className='relative group h-fit'>
             <div className='relative z-10 bg-portfolio-accent/20 rounded overflow-hidden w-full'>
               <img
-                src='/assets/profile.jpg'
+                src='/assets/profile.jpeg'
                 alt='Habib Hassan Hamdoun'
-                className='mix-blend-multiply grayscale contrast-100 brightness-90 hover:filter-none transition-all duration-300 w-full h-full object-cover'
+                className=' contrast-100 brightness-90 hover:filter-none transition-all duration-300 w-full h-full object-cover'
               />
               <div className='absolute inset-0 bg-portfolio-accent/20 hover:bg-transparent transition-all duration-300'></div>
             </div>
